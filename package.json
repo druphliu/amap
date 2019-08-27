@@ -1,23 +1,27 @@
 {
-  "name": "cordova-plugin-gaodelocation-chenyu",
-  "version": "2.0.3",
-  "description": "高德地图定位sdk",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/waliu/cordova-plugin-gaodelocation-chenyu.git"
-  },
+  "name": "cordova-amap-plugins",
+  "version": "1.0.0",
+  "description": "高德地图插件",
   "cordova": {
-    "id": "cordova-plugin-gaodelocation-chenyu",
+    "id": "com.valley.amap",
     "platforms": [
       "android",
       "ios"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinglight/amap.git"
+  },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-ios",
-    "cordova-android"
+    "cordova-android",
+    "cordova-ios"
   ],
-  "author": "chenyu",
-  "license": "ISC"
+  "author": "zhaoyz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yinglight/amap/issues"
+  },
+  "homepage": "https://github.com/yinglight/amap#readme"
 }

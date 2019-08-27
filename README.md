@@ -13,7 +13,7 @@ cordova-android >= 7.0.0
 
 ```
 cordova plugin add cordova-plugin-gaodelocation-chenyu --variable  ANDROID_API_KEY=your android key --variable  IOS_API_KEY=your ios key
-npm install --save @ionic-native/gao-de-location
+npm install --save cordova-amap-plugin
 ```
 
 #### 3.js/ionic2、3使用方法
@@ -92,7 +92,3 @@ export class xxxComponent {
     .catch((error) => console.error(error));
   }
 }
-```
-#### 5.[关于Androd插件的来源](https://blog.csdn.net/u010730897/article/details/54969638)
-#### 6.ios版本本人自制
-#### 7.联系我:QQ群 390736068
