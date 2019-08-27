@@ -1,5 +1,5 @@
 {
-  "name": "cordova-amap-plugins",
+  "name": "cordova-amap-plugin",
   "version": "1.0.0",
   "description": "高德地图插件",
   "cordova": {
