@@ -1,9 +1,9 @@
 {
-  "name": "cordova-amap-plugin",
-  "version": "1.0.4",
+  "name": "cordova-gaode-plugin",
+  "version": "1.0.0",
   "description": "高德地图插件",
   "cordova": {
-    "id": "cordova-amap-plugin",
+    "id": "cordova-gaode-plugin",
     "platforms": [
       "android",
       "ios"
