@@ -20,9 +20,9 @@ npm install --save cordova-amap-plugin
 
 ```
 // js项目调用
-window.GaoDe.getCurrentPosition(successCallback, failedCallback);
+window.GaoDe.getCurrentPosition(successCallback, failedCallback,['start'/'stop']);
 // ts项目调用。
-(<any>window).GaoDe.getCurrentPosition(successCallback, failedCallback);
+(<any>window).GaoDe.getCurrentPosition(successCallback, failedCallback,['start'/'stop']);
 ```
 
 获得定位信息，返回JSON格式数据:
@@ -85,7 +85,7 @@ export class xxxComponent {
   constructor(private gaoDeLocation: GaoDeLocation) {}
   //调用定位
   getCurrentPosition(){
-    this.gaoDeLocation.getCurrentPosition()
+    this.gaoDeLocation.getCurrentPosition(['start'/'stop'])
     .then((res: PositionOptions) => {
        return console.log(res);
     })
