@@ -13,7 +13,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="GaoDeLocation">
-                <param name="android-package" value="com.chenyu.GaoDeLocation.GaoDeLocation"/>
+                <param name="android-package" value="com.GaoDeLocation.GaoDeLocation"/>
             </feature>
         </config-file>
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
@@ -33,7 +33,7 @@
             <uses-permission android:name="android.permission.BLUETOOTH"/>
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
         </config-file>
-        <source-file src="src/android/GaoDeLocation.java" target-dir="src/com/chenyu/GaoDeLocation"/>
+        <source-file src="src/android/GaoDeLocation.java" target-dir="src/com/GaoDeLocation"/>
         <lib-file src="libs/android/AMap_Location_V3.5.0.jar"/>
     </platform>
     <platform name="ios">
