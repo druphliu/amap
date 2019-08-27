@@ -12,7 +12,7 @@ cordova-android >= 7.0.0
 #### 2.安装插件
 
 ```
-cordova plugin add cordova-plugin-gaodelocation-chenyu --variable  ANDROID_API_KEY=your android key --variable  IOS_API_KEY=your ios key
+cordova plugin add cordova-amap-plugin --variable  ANDROID_API_KEY=your android key --variable  IOS_API_KEY=your ios key
 npm install --save cordova-amap-plugin
 ```
 
