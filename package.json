@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "高德地图插件",
   "cordova": {
-    "id": "com.valley.amap",
+    "id": "cordova-amap-plugin",
     "platforms": [
       "android",
       "ios"
