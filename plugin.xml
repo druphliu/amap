@@ -11,7 +11,7 @@
         <engine name="cordova-android" version="&gt;=7.0.0"/>
     </engines>
     <platform name="android">
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="GaoDeLocation">
                 <param name="android-package" value="com.GaoDeLocation.GaoDeLocation"/>
             </feature>
