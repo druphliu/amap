@@ -13,7 +13,6 @@ cordova-android >= 7.0.0
 
 ```
 cordova plugin add cordova-gaode-plugin --variable  ANDROID_API_KEY=your android key --variable  IOS_API_KEY=your ios key
-npm install --save cordova-gaode-plugin
 ```
 
 #### 3.js/ionic2、3、4使用方法
