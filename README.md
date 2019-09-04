@@ -1,5 +1,5 @@
 ### 高德地图定位Android,iOS采用gps定位(该定位为持续定位)（测试阶段）
-本插件利用高德地图提供的定位功能进行Android版手机定位。
+本插件利用高德地图提供的定位功能。
 
 cordova-android >= 7.0.0
 
@@ -16,7 +16,7 @@ cordova plugin add cordova-gaode-plugin --variable  ANDROID_API_KEY=your android
 npm install --save cordova-gaode-plugin
 ```
 
-#### 3.js/ionic2、3使用方法
+#### 3.js/ionic2、3、4使用方法
 
 ```
 // js项目调用
@@ -57,38 +57,3 @@ window.GaoDe.getCurrentPosition(successCallback, failedCallback,['start'/'stop']
 }
 ```
 
-#### 4.Ionic4使用方法
-```typescript
-// app.module.ts ionic3-
-import { GaoDeLocation , PositionOptions } from '@ionic-native/gao-de-location';
-//ionic 4+
-import { GaoDeLocation , PositionOptions } from '@ionic-native/gao-de-location/ngx';
-...
-
-@NgModule({
-  ...
-
-  providers: [
-    ...
-    GaoDeLocation
-    ...
-  ]
-  ...
-})
-export class AppModule { }
-```
-```
-import { GaoDeLocation,PositionOptions } from '@ionic-native/gao-de-location';
-@Component({ ... })
-export class xxxComponent {
-  //注入
-  constructor(private gaoDeLocation: GaoDeLocation) {}
-  //调用定位
-  getCurrentPosition(){
-    this.gaoDeLocation.getCurrentPosition(['start'/'stop'])
-    .then((res: PositionOptions) => {
-       return console.log(res);
-    })
-    .catch((error) => console.error(error));
-  }
-}
