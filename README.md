@@ -1,4 +1,4 @@
-### 高德地图定位Android,iOS采用gps定位
+### 高德地图定位Android,iOS采用gps定位（测试阶段）
 本插件利用高德地图提供的定位功能进行Android版手机定位。
 
 cordova-android >= 7.0.0
