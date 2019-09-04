@@ -1,6 +1,6 @@
 {
   "name": "cordova-gaode-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "高德地图插件",
   "cordova": {
     "id": "cordova-gaode-plugin",
