@@ -22,6 +22,8 @@ cordova plugin add cordova-gaode-plugin --variable  ANDROID_API_KEY=your android
 window.GaoDe.getCurrentPosition(successCallback, failedCallback,['start'/'stop']);
 // ts项目调用。
 (<any>window).GaoDe.getCurrentPosition(successCallback, failedCallback,['start'/'stop']);
+
+(<any>window).GaoDe.getCurrentPosition(data => console.warn(data), msg => console.warn(msg), ["start"]);
 ```
 
 获得定位信息，返回JSON格式数据:
