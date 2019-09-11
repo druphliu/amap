@@ -140,6 +140,8 @@ public class GaoDeLocation extends CordovaPlugin {
                     //errCode等于0代表定位成功，其他的为定位失败，具体的可以参照官网定位错误码说明
                     if (location.getErrorCode() == 0) {
                         json.put("status", "定位成功");
+                        //定位之后的回调时间
+                        json.put("backtime", System.currentTimeMillis());
                         //定位类型
                         json.put("type", location.getLocationType());
                         //纬度
@@ -171,20 +173,21 @@ public class GaoDeLocation extends CordovaPlugin {
                         json.put("poi", location.getPoiName());
                         //兴趣点
                         json.put("time", location.getTime());
+                        PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, json);
+                        pluginResult.setKeepCallback(true);
+                        cb.sendPluginResult(pluginResult);
                     } else {
-                        json.put("status", "定位失败");
-                        json.put("errcode", location.getErrorCode());
-                        json.put("errinfo", location.getErrorInfo());
-                        json.put("detail", location.getLocationDetail());
+                        // json.put("status", "定位失败");
+                        // json.put("errcode", location.getErrorCode());
+                        // json.put("errinfo", location.getErrorInfo());
+                        // json.put("detail", location.getLocationDetail());
+                        PluginResult pluginResult = new PluginResult(PluginResult.Status.ERROR, location.getErrorInfo());
+                        pluginResult.setKeepCallback(true);
+                        cb.sendPluginResult(pluginResult);
                     }
-                    //定位之后的回调时间
-                    json.put("backtime", System.currentTimeMillis());
                 } else {
 
                 }
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, json);
-                pluginResult.setKeepCallback(true);
-                cb.sendPluginResult(pluginResult);
             } catch (JSONException e) {
                 PluginResult pluginResult = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
                 pluginResult.setKeepCallback(true);
