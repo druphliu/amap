@@ -86,7 +86,7 @@
         NSMutableDictionary *mDict = [[NSMutableDictionary alloc] init];
         [mDict  setObject:@"定位失败" forKey:@"status"];
         //            [mDict  setObject:location.timestamp forKey:@"errcode"]
-        CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:mDict];
+        CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsDictionary:@"定位失败"];
         [self.commandDelegate sendPluginResult:commandResult callbackId:self.currentCallbackId];
     }
 }
