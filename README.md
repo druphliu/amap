@@ -1,21 +1,18 @@
 ### 高德地图定位Android,iOS采用gps定位(该定位为持续定位)
 本插件利用高德地图提供的定位功能。
-
 cordova-android >= 7.0.0
-
-#### 1.申请密钥
+#### 申请密钥
 请参照：
 <br>
 [申请android密钥定位SDK](http://lbs.amap.com/api/android-location-sdk/guide/create-project/get-key/)
 <br>
 [申请ios密钥定位SDK](https://lbs.amap.com/api/ios-location-sdk/guide/create-project/get-key)
-#### 2.安装插件
 
+#### 安装插件
 ```
 cordova plugin add cordova-gaode-plugin --variable  ANDROID_API_KEY=your android key --variable  IOS_API_KEY=your ios key
 ```
-
-#### 3.js/ionic2、3、4使用方法
+#### js/ionic2、3、4使用方法
 
 ```
 // js项目调用
@@ -26,7 +23,7 @@ window.GaoDe.getCurrentPosition(successCallback, failedCallback,['start'/'stop']
 (<any>window).GaoDe.getCurrentPosition(data => console.warn(data), msg => console.warn(msg), ["start"]);
 ```
 
-获得定位信息，返回JSON格式数据:
+#### 获得定位信息，返回JSON格式数据:
 
 ```
 {
