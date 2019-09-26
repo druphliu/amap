@@ -148,6 +148,7 @@
 {
     NSLog(@"message = %@",message);
     CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:message];
+    [commandResult setKeepCallback:[NSNumber numberWithBool:YES]];
     [self.commandDelegate sendPluginResult:commandResult callbackId:callbackID];
 }
 @end
